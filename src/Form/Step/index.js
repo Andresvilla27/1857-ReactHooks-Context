@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { TextField, Button, Box } from "@mui/material";
 
 const Step = ({ data, step, pasos }) => {
@@ -16,6 +16,7 @@ const Step = ({ data, step, pasos }) => {
       }}
       onSubmit={(e) => onSubmit(e, step, pasos)}
     >
+      
       {inputs.map((input, i) => {
         const { label, type, value, valid, onChange, helperText, validator } =
           input;
